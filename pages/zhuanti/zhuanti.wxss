@@ -1,0 +1,21 @@
+/* pages/zhuanti/zhuanti.wxss */
+.zhuanti_list image{
+  width: 100%;
+  height: 414rpx;
+}
+.zhuanti_list{
+  text-align: center;
+}
+.title{
+  margin: 20rpx 0;
+}
+.subtitle{
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+  color: gray;
+}
+.price{
+  margin-bottom: 20rpx;
+  color: #9c3232;
+  font-size: 24rpx;
+}

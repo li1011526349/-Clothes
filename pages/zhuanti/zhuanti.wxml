@@ -1,0 +1,9 @@
+<!--pages/zhuanti/zhuanti.wxml-->
+<view class="zhuanti">
+  <view class="zhuanti_list" wx:for="{{allData}}" wx:key="{{index}}">
+    <image src="{{item.scene_pic_url}}"></image>
+    <view class="title">{{item.title}}</view>
+    <view class="subtitle">{{item.subtitle}}</view>
+    <view class="price">{{item.price_info}}元起</view>
+  </view>
+</view>

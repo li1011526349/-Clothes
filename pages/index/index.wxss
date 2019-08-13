@@ -1,0 +1,203 @@
+.top{
+  height: 80rpx;
+  display: flex;
+  padding: 0 20rpx;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: white;
+  width: 100%;
+}
+.address{
+  width: 200rpx;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  align-items: center;
+  font-size: 25rpx;
+}
+.search{
+  flex: 0.9;
+  align-items: center;
+  display: flex;
+   background: lightgray;
+   height: 60%;
+   border-radius: 10rpx;
+}
+.search image{
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+  margin: 0 20rpx;
+}
+.search input{
+  font-size: 25rpx;
+  display: inline-block;
+  align-items: center;
+  flex: 1;
+}
+
+/* 轮播 */
+.lunbo{
+  height: 417rpx;
+  margin-top: 80rpx;
+}
+.lunbo image{
+  width: 100%;
+  height: 100%;
+}
+
+/* 轮播下的 */
+.lunbo_b{
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  padding: 20rpx 0;
+}
+.lunbo_b .lunbo_b_b{
+  width: 25%;
+  display: flex;
+  flex-direction:column;
+  justify-items: center;
+  align-items: center;
+}
+.lunbo_b_b image{
+ width: 58rpx;
+ height: 58rpx;
+}
+
+/* 分割线 */
+.line{
+  height: 30rpx;
+  background: rgb(244, 244, 244);
+}
+
+/* 品牌制造商 */
+.brand{
+  width: 100%;
+}
+.make{
+  padding: 40rpx 0;
+  text-align: center;
+}
+.brandList{
+  display: flex;
+  flex-wrap: wrap;
+}
+.list{
+  width: 48%;
+  position: relative;
+  margin-left: 10rpx;
+  height: 235rpx;
+  margin-bottom: 15rpx;
+}
+.list image{
+  width: 100%;
+  height: 235rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.name{
+  margin: 15rpx 15rpx;
+}
+.price{
+ margin-left: 10rpx;
+ font-size: 28rpx;
+}
+
+/* 新品首发 */
+.new_products{
+  height: 260rpx;
+  background: rgb(238, 245, 252);
+}
+.new{
+  text-align: center;
+  padding-top: 70rpx;
+  color: rgb(175, 215, 253);
+}
+.look{
+  width: 150rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin: 15rpx auto; 
+  background: rgb(216, 228, 240);
+  font-size: 24rpx;
+  color: rgb(175, 215, 253);
+}
+.pink{
+  background: rgb(254, 247, 227);
+}
+.pink .new{
+  color: rgb(193, 193, 166);
+}
+.pink .look{
+  background: rgb(244, 233, 203);
+  color: rgb(193, 193, 166);
+}
+
+/* 专题精选 */
+
+.special{
+  overflow: hidden;
+}
+.special_title{
+/* vertical-align: middle; */
+text-align: center;
+padding: 36rpx;
+position: relative;
+}
+.special_title image{
+display: inline-block;
+width: 32rpx;
+height: 32rpx;
+margin-left: 20rpx;
+position: absolute;
+top: 43rpx;
+}
+
+
+.special_scroll{
+  /* overflow: hidden; */
+  height: 490rpx;
+  display: flex;
+   white-space: nowrap;
+}
+.special_scroll .special_drop{
+ display: inline-block;
+  width: 575rpx;
+  margin-left: 15rpx;
+}
+.special_scroll .special_drop:last-child{
+  margin-right: 15rpx;
+}
+.special_drop image{
+  width: 575rpx;
+  height: 325rpx;
+  border-radius: 10rpx;
+}
+.special_center{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.special_text1{
+  margin: 15rpx 0;
+}
+.special_text2{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 26rpx;
+}
+.special_text3{
+  position: absolute;
+  color: red;
+  right: 0;
+  top: 0;
+  font-size: 26rpx;
+  margin-top: 15rpx;
+}

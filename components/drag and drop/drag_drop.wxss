@@ -1,0 +1,41 @@
+/* components/drag and drop/drag_drop.wxss */
+.drag_drop{
+  width: 100%;
+  overflow: hidden; 
+}
+.scroll{
+display: flex;
+white-space: nowrap;
+}
+.drag_item{
+  width: 280rpx;
+  display: inline-block;
+  border-right: 1rpx solid #f4f4f4;
+  padding-bottom: 20rpx;
+}
+.drag_item image{
+  width: 280rpx;
+  height: 280rpx;
+}
+.drag_name{
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 30rpx;
+}
+.drag_good{
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 30rpx;
+  font-size: 26rpx;
+  color:gray;
+  margin: 15rpx 0;
+}
+.grag_price{
+  font-size: 24rpx;
+  color: red;
+  padding-left: 30rpx;
+}

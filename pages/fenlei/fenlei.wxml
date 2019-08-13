@@ -1,0 +1,27 @@
+<!--pages/fenlei/fenlei.wxml-->
+<view class="top">
+  <view class="search">
+    <image src="../../img/search.png"></image>
+    <input placeholder="商品搜索，共329件好物"></input>
+  </view>
+</view>
+
+<view class="scroll_box">
+  <scroll-view class="scroll_left">
+    <view wx:for="{{left}}" bindtap="getlist" data-index="{{item.id}}" wx:key="{{index}}" class="left {{item.id===id?'active':'left'}}">
+        {{item.name}}
+    </view>
+  </scroll-view>
+  <scroll-view scroll-y="true" class="scroll_right">
+    <view class="right">
+        <image src="{{right.banner_url}}"></image>
+        <view class="title">—{{right.name}}分类—</view>
+        <view class="right_list">
+          <view wx:for="{{right.subList}}" wx:key="{{index}}" class="text_top">
+            <image src="{{item.wap_banner_url}}"></image>
+            <view class="text_end">{{item.name}}</view>
+          </view>
+        </view>
+    </view>
+  </scroll-view>
+</view>

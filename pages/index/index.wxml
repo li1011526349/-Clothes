@@ -1,0 +1,89 @@
+<view>
+<!-- 头部 -->
+  <view class="top">
+    <view class="address" bindtap="address">
+      {{address}}
+    </view>
+    <view class="search">
+      <image src="../../img/search.png"></image>
+      <input placeholder="搜索商品" placeholder-style="color:black"></input>
+    </view>
+  </view>
+  
+  <!-- 轮播 -->
+  <swiper autoplay="true" circular="true" interval="3000" duration="500" class="lunbo" indicator-dots="true">
+    <swiper-item wx:for="{{allData.banner}}" wx:key="{{index}}">
+      <image src="{{item.image_url}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 轮播下的选项 -->
+  <view class="lunbo_b">
+    <view class="lunbo_b_b" wx:for="{{allData.channel}}" wx:key="{{index}}">
+      <image src="{{item.icon_url}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+
+  <!-- 分割线 -->
+  <view class="line"></view>
+
+  <!-- 品牌制造商 -->
+  <view class="brand">
+      <view class="make">品牌制造商直供</view>
+      <view class="brandList">
+        <view class="list" wx:for="{{allData.brandList}}" wx:key="{{index}}">
+          <image src="{{item.new_pic_url}}"></image>
+          <view class="name">{{item.name}}</view>
+          <view class="price">￥{{item.floor_price}}元起</view>
+        </view>
+      </view>
+  </view>
+  <!-- 新品首发 -->
+  <view class="new_products">
+    <view class="new">新品首发</view>
+    <view class="look">查看全部</view>
+  </view>
+
+ <!-- 分割线 -->
+  <view class="line"></view>
+
+  <!-- 拖拽 -->
+  <drop drop="{{allData.newGoods}}"></drop>
+
+   <!-- 分割线 -->
+  <view class="line"></view>
+
+  <!-- 好物精选 -->
+  <view class="new_products pink">
+    <view class="new">人气推荐·好物精选</view>
+    <view class="look">查看全部</view>
+  </view>
+
+<!-- 分割线 -->
+  <view class="line"></view>
+
+<!-- 拖拽 -->
+  <drop drop="{{allData.hotGoods}}"></drop>
+
+  <!-- 分割线 -->
+  <view class="line"></view>
+
+  <!-- 专题精选 -->
+  <view class="special">
+      <view class="special_title">专题精选 <image src="../../img/right.png"></image></view>
+      <scroll-view class="special_scroll" scroll-x="true">
+        <view class="special_drop" wx:for="{{allData.topicList}}" wx:key="{{index}}">
+          <image src="{{item.item_pic_url}}"></image>
+          <view class="special_center">
+          <text class="special_text1">{{item.title}}</text>
+          <view class="special_text2">{{item.subtitle}}</view>
+          <text class="special_text3">{{item.price_info}}元起</text>
+          </view>
+        </view>
+      </scroll-view>
+  </view>
+
+  <!-- 物品展示 -->
+    <homelist homelist="{{allData.newCategoryList}}" />
+</view>

@@ -1,0 +1,41 @@
+<!--pages/stail/stail.wxml-->
+<view class="lb">
+  <swiper autoplay="true" indicator-dots="true">
+    <swiper-item wx:for="{{gallery}}" wx:key="{{index}}">
+      <image src="{{item.img_url}}"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view class="list">
+  <view>
+    <view class="radius"></view>
+    <view>30天无忧退货</view>
+  </view>
+  <view>
+    <view class="radius"></view>
+    <view>48小时极速退款</view>
+  </view>
+  <view>
+    <view class="radius"></view>
+    <view>满88元包邮费</view>
+  </view>
+</view>
+<view class="show">
+  <view class="name">{{info.name}}</view>
+  <view class="goods">{{info.goods_brief}}</view>
+  <view class="price">￥{{info.retail_price}}</view>
+</view>
+
+<view class="choose">
+<text>请选择规格数量</text>
+<text>></text>
+</view>
+
+<view class="bottom">
+    <view class="star"></view>
+    <view class="car">
+      <image src="../../img/ic_menu_shoping_nor.png"></image>
+    </view>
+    <view class="now">立即购买</view>
+    <view class="join" bindtap="joincar">加入购物车</view>
+</view>

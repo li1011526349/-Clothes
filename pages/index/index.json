@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "drop": "../../components/drag and drop/drag_drop",
+    "homelist": "../../components/homelist/homelist"
+  }
+}

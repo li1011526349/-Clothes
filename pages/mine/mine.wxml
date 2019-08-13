@@ -1,0 +1,20 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine_top"> 
+    <image src="{{img}}" class="_img">
+    </image>
+  <view class="name">
+    <text>{{name}}</text>
+    <text>微信用户</text>
+  </view>
+</view>
+
+<view class="center">
+  <view>我的订单</view>
+  <view>优惠券</view>
+  <view>我的足迹</view>
+  <view>我的收藏</view>
+  <view>地址管理</view>
+  <view>联系客服</view>
+  <view>帮助中心</view>
+  <view>意见反馈</view>
+</view>

@@ -1,0 +1,11 @@
+<!--components/drag and drop/drag_drop.wxml-->
+ <drop class="drag_drop">
+    <scroll-view class="scroll" scroll-x="true">
+      <view class="drag_item" wx:for="{{drop}}" wx:key="{{index}}">
+          <image src="{{item.list_pic_url}}"></image>
+          <view class="drag_name">{{item.name}}</view>
+          <view class="drag_good">{{item.goods_brief}}</view>
+          <view class="grag_price">￥{{item.retail_price}}</view>
+      </view>
+    </scroll-view>
+  </drop>

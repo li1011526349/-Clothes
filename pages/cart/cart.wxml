@@ -1,0 +1,46 @@
+<!--pages/cart/cart.wxml-->
+<view class="all">
+  <view class="cartTop">
+  <view class="list">
+    <view class="radius"></view>
+    <view class="text">30天无忧退货</view>
+  </view>
+  <view class="list">
+    <view class="radius"></view>
+    <view class="text">48小时快速退款</view>
+  </view>
+  <view class="list">
+    <view class="radius"></view>
+    <view class="text">满88元包邮费</view>
+  </view>
+</view>
+
+<view class="cartList">
+  <view class="box" wx:for="{{cartList}}" wx:key="{{index}}" bindtouchstart="touchstart" bindtouchend="touchend" animation="{{item.animate}}" data-id="{{item.id}}">
+    <view class="left">
+      <view class="first_img {{item.select?'active':'first_img'}}" data-index="{{index}}" bindtap="change"></view>
+      <view class="center">
+        <image src="{{item.list_pic_url}}"></image>
+      </view>
+      <view class="list_text">
+        <text class="first_text">{{item.goods_name}}</text>
+        <text class="second_text">￥{{item.retail_price}}</text>
+      </view>
+    </view>
+    <view class="right">
+      x{{item.number}}
+    </view>
+    <view class="del" bindtap="del" data-dl="{{item.id}}">删除</view>
+  </view>
+  </view>
+  <view class="bottom">
+      <view class="img {{changeall?'changeall':'img'}}" bindtap="changeall"></view>
+      <view class="bottom_center">
+        <text class="allsure">全选({{number}})</text>
+        <text class="price">￥{{price}}</text>
+      </view>
+      <view class="sure">
+        下单
+      </view>
+  </view>
+</view>
